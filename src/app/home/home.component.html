@@ -1,5 +1,15 @@
-<p>
-  {{this.headers}}
+
+<ul>
+  <li *ngFor="let r of this.restaurants">
+     Name: {{r[1]}}
+     <br>
+     Type: {{r[2]}}
+     <br>
+     Location: {{r[3]}}
+     <br>
+     Hours: {{r[4]}}
+     <br>
+  </li>
   <br>
-  {{this.restaurants}}
-</p>
+  <br>
+</ul>
