@@ -10,15 +10,17 @@ import { RestaurantApiService } from '../restaurant-api.service';
 })
 export class HomeComponent implements OnInit {
 
-  products:any = [];
+  restaurants:any = [];
+  headers:any = [];
 
   constructor(private restaurantApiService: RestaurantApiService) { }
 
   ngOnInit() {
-    this.products = [];
-    this.restaurantApiService.getRestaurants().subscribe((data: {}) => {
-      console.log(data);
-      this.products = data;
+    this.restaurants = [];
+    this.restaurantApiService.getRestaurants().subscribe((result: []) => {
+      this.headers = result['data'][0];
+      this.restaurants = result['data'].slice(1, result.length);
+      console.log(this.restaurants)
     });
   }
 

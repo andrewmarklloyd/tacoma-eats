@@ -7,7 +7,7 @@ import { map, catchError, tap } from 'rxjs/operators';
   providedIn: 'root'
 })
 export class RestaurantApiService {
-  endpoint: string = ""
+  endpoint: string = "https://wt-f293cb80808b2b97de7ea3fe6d7984d5-0.sandbox.auth0-extend.com/tacoma-eats"
 
   headers: HttpHeaders = new HttpHeaders({
     'Content-Type':  'application/json'
