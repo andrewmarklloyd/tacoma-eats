@@ -1,0 +1,43 @@
+{
+  "data": [
+    [
+      "Timestamp",
+      "Name",
+      "Categories",
+      "Location",
+      "Hours",
+      "Cuisine"
+    ],
+    [
+      "3/4/2019 20:43:30",
+      "Dirty Oscar's",
+      "Brunch, Full Bar, With Food",
+      "6th Ave",
+      "Brunch, Lunch, Dinner, Late Night"
+    ],
+    [
+      "3/6/2019 21:43:52",
+      "Oddfella's",
+      "Full Bar, With Food",
+      "West End",
+      "Breakfast, Brunch, Lunch, Dinner, Late Night",
+      "Bar Food"
+    ],
+    [
+      "3/6/2019 22:34:03",
+      "Red Hot",
+      "Brunch, Bottle Shop, With Food",
+      "6th Ave",
+      "Lunch, Dinner, Late Night",
+      "Option 5"
+    ],
+    [
+      "3/6/2019 22:34:44",
+      "Cole's",
+      "Full Bar, With Food",
+      "Ruston",
+      "Lunch, Dinner, Late Night",
+      "Bar Food"
+    ]
+  ]
+}
