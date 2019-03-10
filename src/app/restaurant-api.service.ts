@@ -2,12 +2,13 @@ import { Injectable } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpErrorResponse } from '@angular/common/http';
 import { Observable, of } from 'rxjs';
 import { map, catchError, tap } from 'rxjs/operators';
+import { environment } from '../environments/environment';
 
 @Injectable({
   providedIn: 'root'
 })
 export class RestaurantApiService {
-  endpoint: string = "https://wt-f293cb80808b2b97de7ea3fe6d7984d5-0.sandbox.auth0-extend.com/tacoma-eats"
+  endpoint: string = environment.endpoint
 
   headers: HttpHeaders = new HttpHeaders({
     'Content-Type':  'application/json'
